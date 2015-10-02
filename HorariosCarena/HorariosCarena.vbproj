@@ -97,6 +97,18 @@
     <Compile Include="IU\AsignaturasGrid.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IU\DocentesForm.Designer.vb">
+      <DependentUpon>DocentesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\DocentesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\DocentesGrid.Designer.vb">
+      <DependentUpon>DocentesGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\DocentesGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IU\MenuForm.Designer.vb">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </Compile>
@@ -133,6 +145,8 @@
     </Compile>
     <Compile Include="Reglas\AsignaturaClass.vb" />
     <Compile Include="Reglas\AsignaturasCollection.vb" />
+    <Compile Include="Reglas\DocenteClass.vb" />
+    <Compile Include="Reglas\DocentesCollection.vb" />
     <Compile Include="Reglas\ModuloClass.vb" />
     <Compile Include="Reglas\ModuloCollection.vb" />
   </ItemGroup>
@@ -142,6 +156,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IU\AsignaturasGrid.resx">
       <DependentUpon>AsignaturasGrid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\DocentesForm.resx">
+      <DependentUpon>DocentesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\DocentesGrid.resx">
+      <DependentUpon>DocentesGrid.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>

@@ -85,6 +85,18 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IU\AsignaturasForm.Designer.vb">
+      <DependentUpon>AsignaturasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\AsignaturasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\AsignaturasGrid.Designer.vb">
+      <DependentUpon>AsignaturasGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\AsignaturasGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IU\MenuForm.Designer.vb">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </Compile>
@@ -107,8 +119,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Reglas\AsignaturaClass.vb" />
+    <Compile Include="Reglas\AsignaturasCollection.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="IU\AsignaturasForm.resx">
+      <DependentUpon>AsignaturasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\AsignaturasGrid.resx">
+      <DependentUpon>AsignaturasGrid.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IU\MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -168,7 +188,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Datos\" />
-    <Folder Include="Reglas\" />
     <Folder Include="Utiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -85,30 +85,6 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IU\AsignaturasForm.Designer.vb">
-      <DependentUpon>AsignaturasForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="IU\AsignaturasForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IU\AsignaturasGrid.Designer.vb">
-      <DependentUpon>AsignaturasGrid.vb</DependentUpon>
-    </Compile>
-    <Compile Include="IU\AsignaturasGrid.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IU\DocentesForm.Designer.vb">
-      <DependentUpon>DocentesForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="IU\DocentesForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IU\DocentesGrid.Designer.vb">
-      <DependentUpon>DocentesGrid.vb</DependentUpon>
-    </Compile>
-    <Compile Include="IU\DocentesGrid.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="IU\MenuForm.Designer.vb">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </Compile>
@@ -131,24 +107,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Reglas\AsignaturaClass.vb" />
-    <Compile Include="Reglas\AsignaturasCollection.vb" />
-    <Compile Include="Reglas\DocenteClass.vb" />
-    <Compile Include="Reglas\DocentesCollection.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="IU\AsignaturasForm.resx">
-      <DependentUpon>AsignaturasForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IU\AsignaturasGrid.resx">
-      <DependentUpon>AsignaturasGrid.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IU\DocentesForm.resx">
-      <DependentUpon>DocentesForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="IU\DocentesGrid.resx">
-      <DependentUpon>DocentesGrid.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="IU\MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -173,10 +133,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Datos\" />
-    <Folder Include="Utiles\" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
@@ -209,6 +165,11 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datos\" />
+    <Folder Include="Reglas\" />
+    <Folder Include="Utiles\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

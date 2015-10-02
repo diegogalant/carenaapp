@@ -103,6 +103,18 @@
     <Compile Include="IU\MenuForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IU\ModuloForm.Designer.vb">
+      <DependentUpon>ModuloForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\ModuloForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\ModulosGrid.Designer.vb">
+      <DependentUpon>ModulosGrid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\ModulosGrid.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModuloPrincipal.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -121,6 +133,8 @@
     </Compile>
     <Compile Include="Reglas\AsignaturaClass.vb" />
     <Compile Include="Reglas\AsignaturasCollection.vb" />
+    <Compile Include="Reglas\ModuloClass.vb" />
+    <Compile Include="Reglas\ModuloCollection.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="IU\AsignaturasForm.resx">
@@ -131,6 +145,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IU\MenuForm.resx">
       <DependentUpon>MenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\ModuloForm.resx">
+      <DependentUpon>ModuloForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\ModulosGrid.resx">
+      <DependentUpon>ModulosGrid.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

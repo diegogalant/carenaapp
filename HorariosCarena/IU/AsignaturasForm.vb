@@ -32,18 +32,18 @@
         Select Case operacion_
             Case "Agregar"
 
-                Asig_list.Add(MiAsignatura)
+                asignaturas_list.Add(MiAsignatura)
 
             Case "Eliminar"
 
-                Asig_list.RemoveAt(indice_)
+                asignaturas_list.RemoveAt(indice_)
 
             Case "Modificar"
 
-                Asig_list.Item(indice_).Modulos = MiAsignatura.Modulos
-                Asig_list.Item(indice_).IdCarrera = MiAsignatura.IdCarrera
-                Asig_list.Item(indice_).Asignados = MiAsignatura.Asignados
-                Asig_list.Item(indice_).IdDocente = MiAsignatura.IdDocente
+                asignaturas_list.Item(indice_).Modulos = MiAsignatura.Modulos
+                asignaturas_list.Item(indice_).IdCarrera = MiAsignatura.IdCarrera
+                asignaturas_list.Item(indice_).Asignados = MiAsignatura.Asignados
+                asignaturas_list.Item(indice_).IdDocente = MiAsignatura.IdDocente
                 'AsignaturasGrid.DataGridView1.Refresh()
         End Select
         Me.Close()

@@ -28,13 +28,13 @@
         MiDocente.Correo = TextBox4.Text
         Select Case operacion_
             Case "Agregar"
-                lst.Add(MiDocente)
+                docentes_list.Add(MiDocente)
             Case "Eliminar"
-                lst.RemoveAt(indice_)
+                docentes_list.RemoveAt(indice_)
             Case "Modificar"
-                lst.Item(indice_).Nombres = MiDocente.Nombres
-                lst.Item(indice_).Apellidos = MiDocente.Apellidos
-                lst.Item(indice_).Correo = MiDocente.Correo
+                docentes_list.Item(indice_).Nombres = MiDocente.Nombres
+                docentes_list.Item(indice_).Apellidos = MiDocente.Apellidos
+                docentes_list.Item(indice_).Correo = MiDocente.Correo
                 DocentesGrid.DataGridView1.Refresh()
         End Select
         Me.Close()

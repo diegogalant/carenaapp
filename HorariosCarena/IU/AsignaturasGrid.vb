@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub Eliminar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Eliminar.Click
-        If Asig_list.Count = 0 Then Exit Sub
+        If asignaturas_list.Count = 0 Then Exit Sub
         AsignaturasForm.operacion = "Eliminar"
         AsignaturasForm.indice = CInt(DataGridView1.CurrentRow.Index)
         llenarForm()
@@ -13,7 +13,7 @@
     End Sub
 
     Private Sub Modificar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Modificar.Click
-        If Asig_list.Count = 0 Then Exit Sub
+        If asignaturas_list.Count = 0 Then Exit Sub
         AsignaturasForm.operacion = "Modificar"
         AsignaturasForm.indice = CInt(DataGridView1.CurrentRow.Index)
         llenarForm()
@@ -31,6 +31,6 @@
         AsignaturasForm.TextBox5.Text = DataGridView1.CurrentRow.Cells(4).Value.ToString
     End Sub
     Private Sub AsignaturasGrid_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        DataGridView1.DataSource = Asig_list
+        DataGridView1.DataSource = asignaturas_list
     End Sub
 End Class

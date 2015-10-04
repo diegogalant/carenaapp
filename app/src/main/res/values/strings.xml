@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CarenaApp</string>
+
+    <string name="info">Cargar Menu</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_menu_carena">menuCarena</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>
